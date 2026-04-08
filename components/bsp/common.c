@@ -12,5 +12,5 @@ void gpio_out_init(gpio_num_t gpio_num, uint32_t default_status)
     };
     myprintf("gpio_num = %d, gpio_out_init配置完成 \n\r",gpio_num);
     gpio_config(&gpio_out_config);
-    gpio_set_level(gpio_out_config, 0);
+    gpio_set_level(gpio_num, 0);
 }
